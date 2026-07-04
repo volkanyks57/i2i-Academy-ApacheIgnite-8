@@ -1,0 +1,9 @@
+services:
+  ignite:
+    image: apacheignite/ignite:3.0.0
+    container_name: ignite-node
+    ports:
+      - "10800:10800"
+      - "10300:10300"
+    environment:
+      - IGNITE_CLUSTER_NAME=i2i-cluster
